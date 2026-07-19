@@ -132,6 +132,25 @@ button{ font-family: inherit; cursor:pointer; }
 .skip-link:focus{ left:0; }
 
 :focus-visible{ outline: 2px solid var(--blue); outline-offset: 3px; }
+.stat-chip-1{
+    top: -14px;
+    left: -22px;
+}
+
+.stat-chip-2{
+    bottom: 24px;
+    right: -28px;
+}
+
+.stat-chip-3{
+    bottom: -20px;
+    left: 40px;
+}
+
+.stat-chip-4{
+    top: 120px;
+    right: -35px;
+}
 
 /* =========================================================
    LAYOUT HELPERS
