@@ -29,20 +29,78 @@
   --ease: cubic-bezier(.2,.7,.3,1);
 }
 
-html[data-theme="dark"]{
-  --paper: #0B0E13;
-  --surface: #131820;
-  --surface-2: #171D27;
-  --ink: #E9ECEF;
-  --ink-soft: #A6ACB6;
-  --line: #232A35;
-  --green: #34D399;
-  --green-soft: #143028;
-  --blue: #6C8CFF;
-  --rust: #E2795A;
-  --rust-soft: #2A1C17;
-  --shadow: 0 10px 34px -12px rgba(0,0,0,0.55);
-  --shadow-sm: 0 4px 16px -6px rgba(0,0,0,0.5);
+html[data-theme="dark"] {
+  /* Main backgrounds */
+  --paper: #080B14;
+  --surface: #111827;
+  --surface-2: #182033;
+
+  /* Text colours */
+  --ink: #F8FAFC;
+  --ink-soft: #AAB4C5;
+
+  /* Borders */
+  --line: #29344A;
+
+  /* Primary accent */
+  --green: #38BDF8;
+  --green-soft: #102D40;
+
+  /* Secondary accent */
+  --blue: #A78BFA;
+
+  /* Highlight colour */
+  --rust: #FB7185;
+  --rust-soft: #3B1824;
+
+  /* Shadows */
+  --shadow: 0 14px 40px -14px rgba(0, 0, 0, 0.75);
+  --shadow-sm: 0 6px 20px -8px rgba(0, 0, 0, 0.65);
+}
+html[data-theme="dark"] .hero {
+  background:
+    radial-gradient(
+      55% 55% at 85% 10%,
+      rgba(56, 189, 248, 0.14),
+      transparent 70%
+    ),
+    radial-gradient(
+      45% 50% at 10% 85%,
+      rgba(167, 139, 250, 0.10),
+      transparent 70%
+    ),
+    var(--paper);
+}
+html[data-theme="dark"] .project-card:hover,
+html[data-theme="dark"] .skill-card:hover,
+html[data-theme="dark"] .achievement-card:hover,
+html[data-theme="dark"] .cert-card:hover {
+  border-color: var(--green);
+  box-shadow:
+    0 14px 35px -15px rgba(0, 0, 0, 0.8),
+    0 0 18px rgba(56, 189, 248, 0.10);
+}
+html[data-theme="dark"] .btn-primary {
+  background: linear-gradient(135deg, #38BDF8, #A78BFA);
+  color: #07111D;
+  border-color: transparent;
+}
+
+html[data-theme="dark"] .btn-primary:hover {
+  box-shadow: 0 8px 24px rgba(56, 189, 248, 0.25);
+}
+html[data-theme="dark"] .form-row input,
+html[data-theme="dark"] .form-row textarea {
+  background: #0D1422;
+  border-color: #2B3850;
+}
+
+
+html[data-theme="dark"] .form-row input:focus,
+html[data-theme="dark"] .form-row textarea:focus {
+  border-color: #38BDF8;
+  box-shadow: 0 0 0 3px rgba(56, 189, 248, 0.10);
+  outline: none;
 }
 
 @media (prefers-reduced-motion: reduce){
