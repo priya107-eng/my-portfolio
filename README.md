@@ -12,7 +12,7 @@ portfolio/
 ├── js/
 │   └── script.js       # theme toggle, nav, terminal typing effect, scroll reveal, form
 ├── assets/
-│   └── Priyadharshini_A_Resume.pdf   # served by the "Download Resume" buttons
+│   └── Priyadharshini_A_IT_resume.pdf   # served by the "Download Resume" buttons
 └── README.md
 ```
 
